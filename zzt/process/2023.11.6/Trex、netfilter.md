@@ -243,7 +243,7 @@ route add -net 48.0.0.0 netmask 255.0.0.0 gw 192.168.20.17
 
 结果如图：
 
-![](F:\浙工大研究生\DPDK\实验1\route.png)
+![](route.png)
 
 ##### 发送方（4网口）：
 
@@ -269,7 +269,7 @@ start -f stl/udp_1pkt_simple_bdir.py -m 100mbps
 
 #### 运行效果：
 
-![](F:\浙工大研究生\DPDK\dpdk抓包\202310102229.png)
+![](202310102229.png)
 
 ##### 12网口记录cpu、系统内存、带宽的使用变化情况，每秒1次，记录10次，并保存至指定位置
 
@@ -285,7 +285,7 @@ sar -u -r -n DEV 1 10 -o /root/zzt/result/all-logs
 
 ##### 结果如下
 
-![](F:\浙工大研究生\DPDK\实验1\sar.png)
+![](sar.png)
 
 
 
@@ -592,7 +592,7 @@ lsmod | grep nf_test
 
 如果成功加载，应该会看到该内核模块`nf_test`相关的信息。
 
-<img src="F:\浙工大研究生\DPDK\实验1\lsmod grep.png" style="zoom:200%;" />
+<img src="lsmod grep.png" style="zoom:200%;" />
 
 - 查看抓包结果， 查看系统消息日志的最后10行
 
@@ -600,11 +600,11 @@ lsmod | grep nf_test
 dmesg|tail
 ```
 
-<img src="F:\浙工大研究生\DPDK\实验1\dmesg tail.png" style="zoom: 200%;" />
+<img src="dmesg tail.png" style="zoom: 200%;" />
 
 不嫌输出太多，可以直接执行`dmesg`
 
-<img src="F:\浙工大研究生\DPDK\实验1\dmesg.png" style="zoom:200%;" />
+<img src="dmesg.png" style="zoom:200%;" />
 
 - 使用`rmmod`命令卸载内核模块：
 
